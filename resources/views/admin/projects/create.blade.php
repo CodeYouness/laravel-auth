@@ -9,26 +9,26 @@
                 @csrf
 
                 <div class="mb-3">
-                    <label for="title"></label>
-                    <input type="text" name="title" id="title" class="form-control">
+                    <h2>
+                        Create new post
+                    </h2>
                 </div>
 
                 <div class="mb-3">
-                    <label for="author"></label>
-                    <input type="text" name="author" id="author" class="form-control">
-                </div>
-                <div class="mb-3">
-                    <label for="title"></label>
+                    <label for="title">Title:</label>
                     <input type="text" name="title" id="title" class="form-control">
                 </div>
                 <div class="mb-3">
-                    <label for="title"></label>
-                    <input type="text" name="title" id="title" class="form-control">
+                    <label for="image">Image url:</label>
+                    <input type="text" name="image" id="image" class="form-control">
                 </div>
                 <div class="mb-3">
-                    <label for="title"></label>
-                    <input type="text" name="title" id="title" class="form-control">
+                    <label for="content">Content:</label>
+                    <textarea type="text" name="content" id="content" class="form-control" rows="10" class="form-control"></textarea>
                 </div>
+
+                <input type="submit" value="Create new post" class="btn btn-primary btn-lg">
+                <input type="reset" value="Reset Fields" class="btn btn-warning btn-lg">
             </form>
         </div>
     </div>

@@ -21,7 +21,7 @@
                 @endif
                 @if (Route::has('admin.projects.create'))
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('admin.projects.index')}}">
+                        <a class="nav-link" href="{{route('admin.projects.create')}}">
                             {{__('Create new post')}}
 
                         </a>
