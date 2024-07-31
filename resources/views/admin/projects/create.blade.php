@@ -16,7 +16,8 @@
 
                 <div class="mb-3">
                     <label for="title">Title:</label>
-                    <input type="text" name="title" id="title" class="form-control mb-3">
+                    <input type="text" name="title" id="title" class="form-control mb-3"
+                    value="{{ old('title', $project->title)}}">
                     @error("title")
                         <div class="alert alert-danger mb-3">
                             {{$message}}
@@ -25,7 +26,8 @@
                 </div>
                 <div class="mb-3">
                     <label for="image">Image url:</label>
-                    <input type="text" name="image" id="image" class="form-control mb-3">
+                    <input type="text" name="image" id="image" class="form-control mb-3"
+                    value="{{ old('image', $project->image)}}">
                     @error("image")
                         <div class="alert alert-danger mb-3">
                             {{$message}}
@@ -34,9 +36,11 @@
                 </div>
                 <div class="mb-3">
                     <label for="content">Content:</label>
-                    <textarea type="text" name="content" id="content" class="form-control" rows="10" class="form-control mb-3"></textarea>
+                    <textarea type="text" name="content" id="content" class="form-control" rows="10" class="form-control">
+                        {{ old('content', $project->content)}}
+                    </textarea>
                     @error("content")
-                        <div class="alert alert-danger mb-3">
+                        <div class="alert alert-danger my-3">
                             {{$message}}
                         </div>
                     @enderror
