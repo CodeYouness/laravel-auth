@@ -23,6 +23,6 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::middleware('auth')->name('admin.')->prefix('/admin')->group(function(){
-    Route::resource('/posts', ProjectController::class);
+    Route::resource('/projects', ProjectController::class);
     }
 );
