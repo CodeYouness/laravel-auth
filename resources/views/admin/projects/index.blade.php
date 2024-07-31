@@ -36,3 +36,7 @@
     </div>
 </div>
 @endsection
+
+@section('additional-scripts')
+    @vite('resources/js/projects/delete-index-confirmation.js')
+@endsection
