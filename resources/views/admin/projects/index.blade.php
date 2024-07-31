@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
 <div class="container">
@@ -20,7 +20,7 @@
                             <td>{{$project->author}}</td>
                             <td>{{$project->title}}</td>
                             <td>{{$project->date}}</td>
-                            <td><a href="" class="btn btn-primary">Show</a></td>
+                            <td><a href="{{route('admin.projects.show', $project )}}" class="btn btn-primary btn-sm">Show</a></td>
                         </tr>
                     @endforeach
             </tbody>
